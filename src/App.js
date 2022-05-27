@@ -1,17 +1,19 @@
 import React from "react";
-import {BrowserRouter, Route, Switch} from "react-router-dom";
-import BuyOnlinePage from "./views/BuyOnlinePage"
-import HomePage from "./views/HomePage";
+import LayoutAdmin from "./layouts/LayoutAdmin";
+
+import {
+  BrowserRouter,
+  Route,
+  Switch
+} from "react-router-dom";
 
 const App = () => {
   
   return(
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={() => <HomePage />}/>
-        <Route path="/buy-online"  component={() => <BuyOnlinePage />}/>
+        <Route path="/" component={() => <LayoutAdmin />}/>
       </Switch>
-    
     </BrowserRouter>
   )
 }
